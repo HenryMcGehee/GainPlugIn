@@ -29,6 +29,9 @@ public:
 
 private:
     juce::Slider mGainSlider;
+    juce::Label gainLabel;
+    juce::Slider mVolSlider;
+    juce::Label volumeLabel;
 
     First_pluginAudioProcessor& audioProcessor;
 

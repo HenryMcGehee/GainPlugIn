@@ -54,6 +54,7 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
     float mGain{ 0.5 };
+    float mVol{ 0.5 };
 
 private:
     //==============================================================================

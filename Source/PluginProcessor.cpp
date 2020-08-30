@@ -144,8 +144,9 @@ void First_pluginAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer,
 
         for (int sample = 0; sample < buffer.getNumSamples(); ++sample)
         {
-            channelData[sample] = channelData[sample] * mGain;
+            channelData[sample] = channelData[sample] * mGain * mVol;
         }
+
     }
 }
 
